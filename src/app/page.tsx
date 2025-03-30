@@ -1,61 +1,23 @@
-import Image from "next/image";
+// src/app/page.tsx
+import React from 'react';
+import Header from '@/components/Header'; // Use path alias @/
+import Hero from '../components/Hero';
+import TrustSignals from '@/components/TrustSignals';
+import TeamSection from '@/components/TeamSection';
+import CallToAction from '@/components/CallToAction';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      {/* Start simple */}
-      <h1 className="text-4xl font-bold">Blockport</h1>
-      <p>Secure Solana Staking. Coming Soon.</p>
-      {/* We will build this out properly soon */}
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <div > {/* Use a simple div or React.Fragment as the top-level wrapper */}
+      <Header />
+      <main> {/* Wrap main content sections */}
+       <Hero /> 
+       <TrustSignals />
+       <TeamSection />
+       <CallToAction />
+      </main> {/* Closing main tag */}
+      <Footer />
     </div>
   );
 }

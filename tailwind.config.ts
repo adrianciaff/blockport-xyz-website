@@ -3,18 +3,16 @@ import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}', // If using pages router
+    // Standard paths for App Router with src directory
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}', // Standard for App Router
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-      // Add custom theme extensions here later if needed
-      // e.g., backgroundImage: { 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))', ... }
-    },
+    extend: {}, // Add theme extensions later if needed
   },
   plugins: [
-    require('@tailwindcss/typography'), // Add this line
+    require('@tailwindcss/typography'), // Keep for blog styling
   ],
 };
 export default config;
