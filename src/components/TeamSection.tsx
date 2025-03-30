@@ -19,7 +19,7 @@ const teamMembers: TeamMember[] = [
     id: 1,
     name: "@redactedadrian",
     role: "CEO",
-    bio: "Economics and finance background with over 12 years of experience in financial services, including key roles in Solana's early ecosystem. Now applying long-term investment principles to ensure reliability and security for Blockport's validator.",
+    bio: "Economics and finance background with over 12 years of experience in financial services, including key roles in Solana's early ecosystem.",
     linkedIn: "https://www.linkedin.com/in/adrianciaff/",
     twitter: "https://x.com/redactedadrian",
     github: "https://github.com/adrianciaff",
@@ -28,7 +28,7 @@ const teamMembers: TeamMember[] = [
     id: 2,
     name: "@nikhrmn",
     role: "CTO",
-    bio: "At the helm of our technical operation, Nik spent close to a decade working in IT on mission-critical projects for healthcare and government agencies.",
+    bio: "Computer science background with a decade working in IT on mission-critical projects for healthcare and government agencies.",
     linkedIn: "https://www.linkedin.com/in/nikolaus-herrmann-12090a135/",
     twitter: "https://x.com/nikhrmn",
     // github: undefined, // No GitHub provided for Nik
