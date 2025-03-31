@@ -1,7 +1,7 @@
-// src/app/page.tsx
 import React from 'react';
-import Header from '@/components/Header'; // Use path alias @/
-import Hero from '../components/Hero';
+import Header from '@/components/Header';
+import Hero from '@/components/Hero';
+import StakeInfo from '@/components/StakeInfo';
 import TrustSignals from '@/components/TrustSignals';
 import TeamSection from '@/components/TeamSection';
 import CallToAction from '@/components/CallToAction';
@@ -9,14 +9,15 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <div > {/* Use a simple div or React.Fragment as the top-level wrapper */}
+    <div>
       <Header />
-      <main> {/* Wrap main content sections */}
-       <Hero /> 
-       <TrustSignals />
-       <TeamSection />
-       <CallToAction />
-      </main> {/* Closing main tag */}
+      <main>
+        <Hero />
+        <StakeInfo />
+        <TrustSignals />
+        <TeamSection />
+        <CallToAction />
+      </main>
       <Footer />
     </div>
   );

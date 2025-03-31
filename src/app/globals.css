@@ -2,4 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* You can add custom base styles or layer overrides below this line if needed later */
+/* Add Keyframes for marquee */
+@keyframes marqueeScroll {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Add any other global base styles below if needed */

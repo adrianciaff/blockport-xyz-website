@@ -1,16 +1,11 @@
-// src/app/layout.tsx
 import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans"; // Use recommended Geist import
-import { GeistMono } from "geist/font/mono";  // Use recommended Geist import
-import "./globals.css"; // Import global styles
-
-// Note: Using geist/font directly is often preferred over next/font/google for Geist
-// const geistSans = Geist({ ... }) - Old way, might still work but geist/font is cleaner
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  // Update title/description later
-  title: "Blockport - Solana Staking",
-  description: "Secure, reliable Solana staking.",
+  title: "Blockport - Solana Staking", // Updated title
+  description: "Secure, reliable, zero-fee Solana staking.", // Updated description
 };
 
 export default function RootLayout({
@@ -19,8 +14,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}> {/* Apply font variables to HTML for better inheritance */}
-      <body> {/* Removed manual className, fonts applied via html/CSS */}
+    // Apply default font (quicksand) via font-sans
+    <html lang="en" className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
+      <head>
+        {/* --- IMPORTANT: REPLACE WITH YOUR ADOBE FONTS PROJECT LINK --- */}
+        <link rel="stylesheet" href="https://use.typekit.net/esv0mpp.css" />
+        {/* Add other head elements like favicons here */}
+      </head>
+      <body>
         {children}
       </body>
     </html>
