@@ -21,7 +21,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://use.typekit.net/esv0mpp.css" />
         {/* Add other head elements like favicons here */}
       </head>
-      <body>
+      <body className="font-sans bg-rich-black antialiased">
         {children}
       </body>
     </html>

@@ -3,7 +3,9 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import StakeInfo from '@/components/StakeInfo';
 import TrustSignals from '@/components/TrustSignals';
-import TeamSection from '@/components/TeamSection';
+import Testimonials from '@/components/Testimonials';
+import Insights from  '@/components/Insights';
+import VisionSection from '@/components/VisionSection';
 import CallToAction from '@/components/CallToAction';
 import Footer from '@/components/Footer';
 
@@ -13,9 +15,11 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <StakeInfo />
+        <VisionSection />
         <TrustSignals />
-        <TeamSection />
+        <Testimonials />
+        <StakeInfo />
+        <Insights />
         <CallToAction />
       </main>
       <Footer />
