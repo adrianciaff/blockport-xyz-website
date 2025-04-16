@@ -3,7 +3,12 @@ import React from 'react';
 // Link might not be needed here anymore unless added back
 import Image from 'next/image'; // Keep Image if needed elsewhere, or remove if not
 import LogoMarquee from '@/components/LogoMarquee'; // <-- Import the new component
-import GlobeAnimation from './GlobeAnimation'; // <-- Import the new component (create this file next)
+import dynamic from 'next/dynamic';
+
+const GlobeAnimation = dynamic(
+    () => import('./GlobeAnimation'), // Path to your component
+    { ssr: false } // Disable server-side rendering for this component
+);
 
 
 // Keep logo data here for now, pass as prop
