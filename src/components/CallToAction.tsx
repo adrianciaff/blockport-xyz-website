@@ -3,11 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
-
-const GlobeAnimation = dynamic(
-    () => import('./GlobeAnimation'),
-    { ssr: false }
-);
+import GlobeAnimation from './GlobeAnimation';
 
 const CallToAction: React.FC = () => {
   const schedulingLink = "#";
